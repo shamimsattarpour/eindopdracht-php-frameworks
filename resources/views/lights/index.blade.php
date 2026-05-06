@@ -18,42 +18,29 @@
         </a>
     @endforeach
 </div>
-
 <div class="row">
-
     @foreach($lights as $light)
 
         <div class="col-md-4 mb-4">
-
             <div class="card h-100 shadow-sm">
-
-                <img src="https://placehold.co/600x400"
+                <img src="{{ asset('images/' . $light->image) }}"
                      class="card-img-top"
-                     alt="lamp">
-
+                         alt="{{ $light->name }}">
                 <div class="card-body">
-
                     <h5 class="card-title">
                         {{ $light->name }}
                     </h5>
-
                     <p class="card-text">
                         € {{ $light->price }}
                     </p>
-
                     <a href="{{ route('lights.detail', $light->id) }}"
                        class="btn btn-dark">
                         View Details
                     </a>
-
                 </div>
-
             </div>
-
         </div>
-
     @endforeach
-
 </div>
 
 @endsection

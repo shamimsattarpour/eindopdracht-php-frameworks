@@ -12,6 +12,6 @@ class LightSeeder extends Seeder
      */
     public function run(): void
     {
-      \App\Models\Light::factory(10)->create();
+      \App\Models\Light::factory(12)->create();
     }
 }

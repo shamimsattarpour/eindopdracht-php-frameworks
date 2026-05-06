@@ -1,5 +1,91 @@
 @import "bootstrap/scss/bootstrap";
 
+/*---------------------------------------/*
+ # SETTINGS
+/*---------------------------------------*/
+
+$primary-color: #212529;
+$background-color: #f8f9fa;
+$card-radius: 12px;
+
+/*---------------------------------------/*
+ # GENERIC
+/*---------------------------------------*/
+
 body {
-    background-color: #f8f9fa;
+    background-color: $background-color;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $primary-color;
+}
+
+/*---------------------------------------/*
+ # ELEMENTS
+/*---------------------------------------*/
+
+h1,
+h2,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*---------------------------------------/*
+ # OBJECTS
+/*---------------------------------------*/
+
+.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/*---------------------------------------/*
+ # COMPONENTS
+/*---------------------------------------*/
+
+header {
+    background-color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card {
+    border: none;
+    border-radius: $card-radius;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn-dark {
+    border-radius: 8px;
+    padding: 10px 18px;
+}
+
+.btn-outline-dark {
+    border-radius: 8px;
+}
+
+/*---------------------------------------/*
+ # UTILITIES
+/*---------------------------------------*/
+
+.mb-4 {
+    margin-bottom: 2rem !important;
 }
