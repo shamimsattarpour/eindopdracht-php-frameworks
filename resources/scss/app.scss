@@ -58,28 +58,25 @@ header {
     border-radius: $card-radius;
     overflow: hidden;
     transition: 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card-img-top {
-    height: 250px;
-    object-fit: cover;
-}
-
-.card-body {
-    padding: 20px;
+    &-img-top {
+        height: 400px;
+        object-fit: cover;
+        width: auto;
+    }
+    &-body {
+        padding: 20px;
+    }
+    &:hover {
+        transform: translateY(-5px);
+    }
 }
 
 .btn-dark {
     border-radius: 8px;
     padding: 10px 18px;
-}
-
-.btn-outline-dark {
-    border-radius: 8px;
+    &-outline-dark {
+        border-radius: 8px;
+    }
 }
 
 /*---------------------------------------/*

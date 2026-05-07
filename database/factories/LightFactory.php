@@ -28,7 +28,7 @@ class LightFactory extends Factory
 
             'price' => fake()->numberBetween(20, 500),
 
-            'image' => fake()->randomElement([
+            'image' => fake()->unique()->randomElement([
                 'lamp1.jpg',
                 'lamp2.jpg',
                 'lamp3.jpg',
