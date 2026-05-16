@@ -15,7 +15,8 @@
             </h5>
 
             <p class="card-text">
-@currency($light->price)            </p>
+                @currency($light->price)
+            </p>
 
             <a href="{{ route('lights.detail', $light->id) }}"
                class="btn btn-dark">
